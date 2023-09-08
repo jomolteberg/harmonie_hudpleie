@@ -1,0 +1,15 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-template {
+    align-self: center;
+}
+
+iframe {
+    width: 500px;
+    margin: 3rem;
+}
