@@ -4,10 +4,32 @@ p, h1, h2, h3 {
     font-family: var(--text-paragraph);
 }
 
+p {
+  max-width: 600px;
+}
+
 body {
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+}
+
+main {
+  margin-top: 3rem;
+}
+
+header {
+  position: relative; 
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+header {
+  height: 55vh;
+}
+
 }
 
 .bg-img {
@@ -25,9 +47,6 @@ body {
 .bg-img-kontakt {
   object-position: right center; 
 }
-
-
-
 
 .image-banner {
   padding: 0;
@@ -68,6 +87,7 @@ body {
   padding: 50px 0;
   max-width: 600px;
 }
+
 
 /* Side-by-side section */
 .side-by-side-section {
