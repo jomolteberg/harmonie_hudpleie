@@ -11,14 +11,27 @@ body {
 }
 
 .bg-img {
-    height: 100%; 
-    width: 100%; 
-    object-fit: cover;
-    filter: brightness(0.6);
-    position: absolute; 
-    top: 0;
-    left: 0;
-    z-index: -1;
+  height: 100%; 
+  width: 100%; 
+  object-fit: cover;
+  object-position: center; 
+  filter: brightness(0.6);
+  position: absolute; 
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.bg-img-kontakt {
+  object-position: right center; 
+}
+
+
+
+
+.image-banner {
+  padding: 0;
+  margin: 0;
 }
 
 .navbar {
@@ -46,6 +59,59 @@ body {
     align-self: center;
     z-index: 1;
     font-family: var(--text-paragraph);
+}
+
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 50px 0;
+  max-width: 600px;
+}
+
+/* Side-by-side section */
+.side-by-side-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+}
+
+.contact-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.contact-info {
+  flex: 1;
+  padding: 0 20px;
+}
+
+/* Map section */
+.map-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.map-section iframe {
+  max-width: 800px;
+  width: 100%;
+  min-width: 900px;
+  height: 400px;
+}
+
+@media (max-width: 768px) {
+  .side-by-side-section {
+    flex-direction: column;
+  }
+
+  .map-section iframe {
+    height: 300px;
+    width: 100%;
+    max-width: 350px;
+    min-width: 300px;
+  }
 }
 
 
